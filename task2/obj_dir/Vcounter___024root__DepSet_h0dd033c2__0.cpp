@@ -2,9 +2,7 @@
 // DESCRIPTION: Verilator output: Design implementation internals
 // See Vcounter.h for the primary calling header
 
-#include "verilated.h"
-
-#include "Vcounter__Syms.h"
+#include "Vcounter__pch.h"
 #include "Vcounter__Syms.h"
 #include "Vcounter___024root.h"
 

@@ -8,9 +8,7 @@
 #ifndef VERILATED_VCOUNTER_H_
 #define VERILATED_VCOUNTER_H_  // guard
 
-
 #include "verilated.h"
-
 
 class Vcounter__Syms;
 class Vcounter___024root;

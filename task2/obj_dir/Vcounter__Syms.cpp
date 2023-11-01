@@ -1,7 +1,7 @@
 // Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Symbol table implementation internals
 
-#include "Vcounter__Syms.h"
+#include "Vcounter__pch.h"
 #include "Vcounter.h"
 #include "Vcounter___024root.h"
 

@@ -2,9 +2,7 @@
 // DESCRIPTION: Verilator output: Design implementation internals
 // See Vcounter.h for the primary calling header
 
-#include "verilated.h"
-
-#include "Vcounter__Syms.h"
+#include "Vcounter__pch.h"
 #include "Vcounter___024root.h"
 
 VL_ATTR_COLD void Vcounter___024root___eval_static(Vcounter___024root* vlSelf) {

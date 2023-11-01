@@ -2,6 +2,7 @@
 #include "verilated.h"
 #include "verilated_vcd_c.h"
 #include "vbuddy.cpp"
+#include <iostream>
 
 
 int main(int argc, char **argv, char **env)
@@ -37,12 +38,11 @@ int main(int argc, char **argv, char **env)
             top->clk = !top->clk;
             top->eval();
         }
-
+        
+        std::cout << "count = " << int(top->count) << std::endl;
         // ++++ Send count value to vBuddy
-        vbdHex(4, (int(top->count) >> 16) * 0xF);
-        vbdHex(3, (int(top->count) >> 8) * 0xF);
-        vbdHex(2, (int(top->count) >> 4) * 0xF);
-        vbdHex(1, int(top->count) * 0xF);
+        vbdPlot(int(top->count), 0, 255);
+        vbdCycle(i+1);
         // ---- End of VBuddy output section
 
         // change input stimuli
